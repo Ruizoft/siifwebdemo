@@ -3,6 +3,7 @@ import { combineReducers, Store, StoreModule } from '@ngrx/store';
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { By } from '@angular/platform-browser';
+import { SwController } from '../../ServiceWorker/swController';
 import { TestStore } from '../../testingUtils';
 import * as DocumentActions from '../actions';
 import queries from '../queries';
@@ -14,14 +15,16 @@ describe('Document container test suite', () => {
         let fixture: ComponentFixture<DocumentComponent>;
         let store: TestStore<any>;
         let document: any;
-
+        let TheSwController: any;
         beforeEach(() => {
+            TheSwController = { isEnabled: false };
             TestBed.configureTestingModule({
                 declarations: [
                     DocumentComponent,
                 ],
                 providers: [
                     { provide: Store, useClass: TestStore },
+                    { provide: SwController, useValue: TheSwController },
                   ],
                 schemas: [ NO_ERRORS_SCHEMA ],           
             });
