@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "lib": [ "esnext" ],
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+     "sourceMap": true,
+     "emitDecoratorMetadata": true,
+     "noImplicitAny": true,
+     "suppressImplicitAnyIndexErrors": true,
+     "types": [
+       "jest"
+     ]
+  }
+ }

@@ -1,0 +1,6 @@
+<div class="document_container">
+    <h1 *ngIf="true">Document</h1>
+    <div class="docs" *ngFor="let document of documents2$ | async">DOCU_GEN: {{document.DOCU_GEN}}</div>
+    <signatures-comp></signatures-comp>
+    <details-comp></details-comp>
+</div>

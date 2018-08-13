@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "tslint:recommended", 
+        "tslint-plugin-prettier",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "quotemark": [true, "single"],
+        "indent": [true, "spaces", 2],
+        "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+        "semicolon": [true, "always"],
+        "object-literal-sort-keys": false,
+        "no-console": {
+            "severity": "warning",
+            "options": [
+                "debug",
+                "log",
+                "time",
+                "timeEnd",
+                "trace"
+            ]
+        }
+    }
+}
