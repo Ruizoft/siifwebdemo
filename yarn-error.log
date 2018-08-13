@@ -22,7 +22,7 @@ npm manifest:
     "license": "MIT",
     "private": true,
     "scripts": {
-      "build": "webpack",
+      "build": "webpack --config webpack.prod.js ",
       "start": "concurrently \"npm run wp\" \"npm run dev\"",
       "wp": "webpack -wd --config webpack.dev.js --mode development",
       "dev": "webpack-dev-server  --inline --hot --config webpack.dev.js",

@@ -39,6 +39,10 @@ describe('Document container test suite', () => {
         it('should render the component', () => {
             expect(component).toBeTruthy();
         });
+
+        it('should render the component', () => {
+            expect(false).toBeTruthy();
+        });
     
         it('should make the correct sum', () => {   
             expect(component.simpleSum(1, 2)).toBe(3);           
